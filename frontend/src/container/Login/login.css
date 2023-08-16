@@ -1,0 +1,111 @@
+.login-container__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: rgb(250, 246, 246);
+  padding: 5rem;
+}
+
+.err-msg {
+  display: block;
+  background-color: rgb(214, 90, 90);
+  color: var(--color-light);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.login_data-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.data-form__header {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.data-form__input {
+  height: 100%;
+  position: relative;
+}
+
+.data-form__input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-bottom: 1px solid rgb(116, 115, 115);
+}
+
+.data-form__input input:focus {
+  outline: none;
+}
+
+.data-form__input i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.data-form__input i.email,
+.data-form__input i.pwd {
+  left: 0;
+}
+
+.data-form__input i.hide {
+  right: 0;
+}
+.data-form__options {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.data-form__options-checkbox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.data-form__options-checkbox label {
+  cursor: pointer;
+  user-select: none;
+}
+.data-form__options-fpwd {
+  color: var(--color-lightblue);
+}
+
+.data-form__options-fpwd:hover {
+  color: var(--color-darkblue);
+}
+.register a {
+  color: var(--color-lightblue);
+}
+.register a:hover {
+  color: var(--color-darkblue);
+}
+
+.login {
+  width: 100%;
+  background: var(--color-lightblue);
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  height: 90%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login:hover {
+  color: var(--color-light);
+}

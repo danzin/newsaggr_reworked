@@ -1,0 +1,70 @@
+.profile-container {
+  padding-top: 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Adjust the column sizes as needed */
+
+  gap: 20px; /* Gap between sections */
+  max-width: 1200px; /* Optional, set a maximum width for the page */
+  margin: 1rem auto;
+}
+
+li {
+  list-style: none;
+}
+
+.profile-sum {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 200px;
+  aspect-ratio: 1/1;
+  background-color: red;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--color-lightblue);
+}
+
+.settings-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+  }
+  .profile-sum {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media (max-width: 510px) {
+  .profile-container {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+  }
+  .profile-sum {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}

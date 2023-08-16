@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+:root {
+  --text-primary: rgb(0, 0, 0);
+  --color-light: hsl(179, 29%, 73%);
+  --color-lightblue: hsl(217, 60%, 47%);
+  --menu-transparent: rgba(48, 103, 192, 0.6);
+  --color-darkblue: hsl(244, 94%, 20%);
+  --color-lighterblue: hsl(190, 72%, 46%);
+  --color-gray: hsl(219, 8%, 53%);
+  --color-purple: #430f58;
+
+  --transition-speed: 500ms ease;
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-light);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-purple);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-darkblue);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}

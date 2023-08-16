@@ -1,0 +1,11 @@
+.ref {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(40%, calc(100vw / 2), 90%);
+}
+@media only screen and (max-width: 600px) {
+  .ref {
+    width: 100%;
+  }
+}
